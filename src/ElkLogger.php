@@ -30,8 +30,8 @@ class ElkLogger
         $client->auth($config['password']);
 
         $redisHandler = new RedisHandler($client, 'logstash');
-        $formatter = new LogstashFormatter('sso');
+        $formatter = new LogstashFormatter($config['type']);
         $redisHandler->setFormatter($formatter);
-        return new Logger('sso', [$redisHandler]);
+        return new Logger($config['type'], [$redisHandler]);
     }
 }
