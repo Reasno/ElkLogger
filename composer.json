@@ -1,0 +1,16 @@
+{
+    "name": "reasno/elk-logger",
+    "description": "Logger to ELK stack",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Reasno",
+            "email": "guxi99@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "predis/predis": "^1.1"
+    }
+}
