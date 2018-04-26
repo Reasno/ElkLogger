@@ -18,7 +18,8 @@ return [
         'level' => 'info',
         'password' => "XXXXXXX",
         'host' => '127.0.0.1',
-        'port' => XXXX
+        'port' => XXXX,
+        'type' => 'some unique id'
     ],
     //...
 ];
