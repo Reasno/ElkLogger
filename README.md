@@ -1,5 +1,5 @@
 # ElkLogger
-This packages is to be used in conjunction with laravel.
+This package is to be used in conjunction with laravel.
 
 ## Installation
 
