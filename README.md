@@ -1,10 +1,10 @@
 # ElkLogger
-This packages is to be used in conjunction with laravel.
+This package is to be used in conjunction with laravel.
 
 ## Installation
 
 ```bash
-composer require reasno\elk-logger
+composer require reasno/elk-logger
 ```
 
 ## Configuration
