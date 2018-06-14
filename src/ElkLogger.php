@@ -31,7 +31,7 @@ class ElkLogger
         $client->auth($config['password']);
 
         $redisHandler = new RedisHandler($client, 'logstash');
-        $formatter = new LogstashFormatter($config['type']);
+        $formatter = new LogstashFormatter('php');
         $processor = new PsrLogMessageProcessor();
         $redisHandler->setFormatter($formatter);
         $redisHandler->pushProcessor($processor);
