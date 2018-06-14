@@ -5,7 +5,7 @@ namespace Reasno\ElkLogger;
 use Monolog\Logger;
 use Monolog\Handler\RedisHandler;
 use Monolog\Formatter\LogstashFormatter;
-use Monolog\Processor\PsrLogMessageProcessor
+use Monolog\Processor\PsrLogMessageProcessor;
 use Predis\Client;
 
 class ElkLogger
