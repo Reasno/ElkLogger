@@ -5,6 +5,7 @@ namespace Reasno\ElkLogger;
 use Monolog\Logger;
 use Monolog\Handler\RedisHandler;
 use Monolog\Formatter\LogstashFormatter;
+use Monolog\Processor\PsrLogMessageProcessor
 use Predis\Client;
 
 class ElkLogger
@@ -31,7 +32,9 @@ class ElkLogger
 
         $redisHandler = new RedisHandler($client, 'logstash');
         $formatter = new LogstashFormatter($config['type']);
+        $processor = new PsrLogMessageProcessor();
         $redisHandler->setFormatter($formatter);
+        $redisHandler->pushProcessor($processor);
         return new Logger($config['type'], [$redisHandler]);
     }
 }
